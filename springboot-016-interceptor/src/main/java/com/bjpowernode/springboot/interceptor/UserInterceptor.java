@@ -21,8 +21,7 @@ public class UserInterceptor implements HandlerInterceptor {
        // 2. 判断用户是否登录
        if (null == user) {
            response.sendRedirect(request.getContextPath() + "/nologin");
-           System.out.println("this is a new line");
-           System.out.println("this is hot-fix");
+           System.out.println("master test");
            return false;
        }
        return true;
