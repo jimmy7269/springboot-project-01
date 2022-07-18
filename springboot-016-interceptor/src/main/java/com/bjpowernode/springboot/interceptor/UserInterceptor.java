@@ -22,6 +22,7 @@ public class UserInterceptor implements HandlerInterceptor {
        if (null == user) {
            response.sendRedirect(request.getContextPath() + "/nologin");
            System.out.println("master test");
+           System.out.println("pull test");
            return false;
        }
        return true;
